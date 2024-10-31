@@ -7,17 +7,14 @@ const Header = () => {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-color">
       <div className="container">
-        {/* Use Link for logo navigation */}
         <Link className="navbar-brand" to="/">
           <img src={logo} alt="logo" width="60" height="60"></img>
         </Link>
 
-        {/* Toggler button for mobile view */}
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
 
-        {/* Collapsible navigation items */}
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav mx-auto">
             <li className="nav-item">
@@ -34,7 +31,6 @@ const Header = () => {
             </li>
           </ul>
 
-          {/* Login and Register buttons */}
           <div className="d-flex">
             <Link to="/login" className="btn btn-outline-primary me-2">Login</Link>
             <Link to="/register" className="btn btn-primary">Register</Link>
